@@ -1,10 +1,10 @@
 {% extends "base.html" %} {% block content %}
 <div class="container mt-4">
-  <h2 class="mb-3">Cadastrar Produto</h2>
+  <h2 class="mb-3">Editar Produto</h2>
 
   <form method="POST" class="card p-4 shadow-sm">
     {% csrf_token %} {{ form.as_p }}
-    <button type="submit" class="btn btn-primary">Salvar</button>
+    <button type="submit" class="btn btn-success">Atualizar</button>
   </form>
 
   <a href="{% url 'listar' %}" class="btn btn-secondary mt-3">Voltar</a>
